@@ -1,9 +1,19 @@
 <resources>
     <string name="app_name">AnaMi</string>
     <string name="logo_description">This is app logo</string>
+
+    <!--for login things-->
     <string name="account_hint">아이디</string>
     <string name="password_hint">비밀번호</string>
     <string name="find_password">아이디/비밀번호 찾기 > </string>
     <string name="login">로그인</string>
     <string name="sign_up">회원가입</string>
+
+    <string name="profile_description">This is profile image</string>
+    <string name="example_account">account</string>
+    <string name="example_nickname">nickname</string>
+    <string name="example_email">email@email.com</string>
+    <string name="change_profile">정보 수정</string>
+
+
 </resources>

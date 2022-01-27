@@ -26,8 +26,7 @@
         android:padding="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_logo"
-        app:layout_constraintVertical_bias="0.139">
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo">
 
         <EditText
             android:id="@+id/et_account"
@@ -36,7 +35,7 @@
             android:layout_marginBottom="10dp"
             android:autofillHints="username"
             android:hint="@string/account_hint"
-            android:inputType="text"/>
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/et_password"
@@ -53,7 +52,7 @@
             android:layout_height="wrap_content"
             android:text="@string/find_password"
             android:textColor="#B9AECC"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
 
