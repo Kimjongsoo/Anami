@@ -8,6 +8,7 @@
     <string name="find_password">아이디/비밀번호 찾기 > </string>
     <string name="login">로그인</string>
     <string name="sign_up">회원가입</string>
+    <string name="auto_login">자동 로그인</string>
 
     <string name="profile_description">This is profile image</string>
     <string name="example_account">account</string>

@@ -45,14 +45,31 @@
             android:autofillHints="password"
             android:hint="@string/password_hint"
             android:inputType="textPassword" />
-
-        <TextView
-            android:id="@+id/tv_findPassword"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/find_password"
-            android:textColor="#B9AECC"
-            android:textStyle="bold" />
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <CheckBox
+                android:id="@+id/cb_auto_login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/auto_login"
+                android:checked="false"/>
+
+            <TextView
+                android:id="@+id/tv_findPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/find_password"
+                android:textColor="#B9AECC"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
 
     </LinearLayout>
 
