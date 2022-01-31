@@ -59,7 +59,7 @@
     <Button
         android:id="@+id/btn_changeInfo"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="50dp"
         android:layout_marginTop="50dp"
         android:layout_marginLeft="60dp"
         android:layout_marginRight="60dp"
@@ -67,4 +67,19 @@
         android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@+id/tv_email"
         tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/tv_logout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:gravity="center"
+        android:text="@string/logout"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#9780BF"
+        app:layout_constraintTop_toBottomOf="@+id/btn_changeInfo"
+        tools:layout_editor_absoluteX="60dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
