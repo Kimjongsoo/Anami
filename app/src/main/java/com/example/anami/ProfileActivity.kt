@@ -22,11 +22,7 @@ class ProfileActivity : AppCompatActivity() {
             editor.apply()
 
             Toast.makeText(this, "로그아웃 완료", Toast.LENGTH_SHORT).show()
-            //앱 종료 후 재시작
             finishAffinity()
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
-            System.exit(1)
         }
     }
 }
