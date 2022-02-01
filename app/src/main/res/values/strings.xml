@@ -15,6 +15,10 @@
     <string name="example_nickname">nickname</string>
     <string name="example_email">email@email.com</string>
     <string name="change_profile">정보 수정</string>
+
     <string name="logout">로그아웃</string>
+
+    <string name="manage_page">관리일지 페이지</string>
+
 
 </resources>

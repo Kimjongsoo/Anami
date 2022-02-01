@@ -5,14 +5,14 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:orientation="vertical">
 
-<TextView
-    android:id="@+id/textView1"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    android:gravity="center"
-    android:text="TabHost 사용 예제"
-    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="@string/manage_page"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
 <TabHost
     android:id="@+id/tabHost1"
@@ -45,7 +45,7 @@ android:orientation="vertical">
                     android:background="#009688"
                     android:gravity="center"
                     android:padding="8dp"
-                    android:text="TAB 1"
+                    android:text="1"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display4"/>
 
             </LinearLayout>
@@ -61,7 +61,7 @@ android:orientation="vertical">
                     android:background="#2196F3"
                     android:gravity="center"
                     android:padding="8dp"
-                    android:text="TAB 2"
+                    android:text="2"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display4"/>
             </LinearLayout>
 
@@ -77,7 +77,7 @@ android:orientation="vertical">
                     android:background="#B31D1D"
                     android:gravity="center"
                     android:padding="8dp"
-                    android:text="TAB 3"
+                    android:text="3"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display4"/>
             </LinearLayout>
         </FrameLayout>
