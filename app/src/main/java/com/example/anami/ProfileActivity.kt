@@ -17,6 +17,11 @@ class ProfileActivity : AppCompatActivity() {
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.btnChangeInfo.setOnClickListener {
+            val intent = Intent(this, ChangeProfileActivity::class.java)
+            startActivity(intent)
+        }
+
         binding.tvLogout.setOnClickListener{
             val pInterface = DialogInterface.OnClickListener{ dialog, which ->
                 val sharedPreferences:SharedPreferences = getSharedPreferences("app_shared_pref", Context.MODE_PRIVATE)
