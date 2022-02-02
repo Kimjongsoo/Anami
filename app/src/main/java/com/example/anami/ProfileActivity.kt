@@ -1,6 +1,8 @@
 package com.example.anami
 
+import android.app.AlertDialog
 import android.content.Context
+import android.content.DialogInterface
 import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
@@ -16,13 +18,24 @@ class ProfileActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.tvLogout.setOnClickListener{
-            val sharedPreferences:SharedPreferences = getSharedPreferences("app_shared_pref", Context.MODE_PRIVATE)
-            val editor:SharedPreferences.Editor = sharedPreferences.edit()
-            editor.putBoolean("isLogin", false)
-            editor.apply()
+            val pInterface = DialogInterface.OnClickListener{ dialog, which ->
+                val sharedPreferences:SharedPreferences = getSharedPreferences("app_shared_pref", Context.MODE_PRIVATE)
+                val editor:SharedPreferences.Editor = sharedPreferences.edit()
+                editor.putBoolean("isLogin", false)
+                editor.apply()
 
-            Toast.makeText(this, "로그아웃 완료", Toast.LENGTH_SHORT).show()
-            finishAffinity()
+                Toast.makeText(this, "로그아웃 완료", Toast.LENGTH_SHORT).show()
+                finishAffinity()
+            }
+
+            val dialogBuilder = AlertDialog.Builder(this)
+                .setIcon(R.drawable.tmp_anami_icon)
+                .setTitle("")
+                .setMessage("정말 로그아웃하시겠습니까?")
+                .setPositiveButton("네", pInterface)
+                .setNegativeButton("아니오", null)
+
+            dialogBuilder.create().show()
         }
     }
 }
