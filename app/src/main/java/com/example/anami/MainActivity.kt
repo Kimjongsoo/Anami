@@ -21,8 +21,13 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,ProfileActivity::class.java)
             startActivity(intent)
         }
+        binding.btnTmpNotice.setOnClickListener {
+            val intent = Intent(this,NoticeActivity::class.java)
+            startActivity(intent)
+        }
 
     }
+
     override fun onBackPressed() {
         super.onBackPressed()
         finishAffinity()

@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AnaMi">
-        <activity android:name=".ChangeProfileActivity"></activity>
+        <activity
+            android:name=".NoticeActivity"
+            android:exported="false" />
+        <activity android:name=".ChangeProfileActivity" />
         <activity android:name=".ManageNoteActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".LoginActivity">
