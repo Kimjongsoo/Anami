@@ -8,12 +8,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/me/Documents/Anami/app/src/main/res/layout/activity_change_profile.xml" value="0.15416666666666667" />
-        <entry key="..\:/Users/me/Documents/Anami/app/src/main/res/layout/activity_login.xml" value="0.15416666666666667" />
-        <entry key="..\:/Users/me/Documents/Anami/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/Users/me/Documents/Anami/app/src/main/res/layout/activity_notice_acitivity.xml" value="0.15416666666666667" />
-        <entry key="..\:/Users/me/Documents/Anami/app/src/main/res/layout/activity_profile.xml" value="0.15416666666666667" />
-        <entry key="..\:/Users/me/Documents/Anami/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1703125" />
+        <entry key="..\:/Anami/app/src/main/res/layout/activity_change_profile.xml" value="0.17916666666666667" />
+        <entry key="..\:/Anami/app/src/main/res/layout/activity_login.xml" value="0.17916666666666667" />
+        <entry key="..\:/Anami/app/src/main/res/layout/activity_main.xml" value="0.17916666666666667" />
+        <entry key="..\:/Anami/app/src/main/res/layout/activity_manage_note.xml" value="0.16666666666666666" />
+        <entry key="..\:/Anami/app/src/main/res/layout/activity_notice.xml" value="0.1" />
+        <entry key="..\:/Anami/app/src/main/res/layout/activity_notice_activity.xml" value="0.22" />
+        <entry key="..\:/Anami/app/src/main/res/layout/activity_profile.xml" value="0.17916666666666667" />
+        <entry key="..\:/Anami/app/src/main/res/layout/fragment_manage_one.xml" value="0.1" />
+        <entry key="..\:/Anami/app/src/main/res/layout/fragment_manage_three.xml" value="0.17916666666666667" />
+        <entry key="..\:/Anami/app/src/main/res/layout/fragment_manage_two.xml" value="0.17916666666666667" />
+        <entry key="..\:/Anami/app/src/main/res/layout/fragment_notice_one.xml" value="0.22" />
+        <entry key="..\:/Anami/app/src/main/res/layout/fragment_notice_three.xml" value="0.1" />
+        <entry key="..\:/Anami/app/src/main/res/layout/fragment_notice_two.xml" value="0.1" />
+        <entry key="..\:/Anami/app/src/main/res/layout/listview_item.xml" value="0.17916666666666667" />
       </map>
     </option>
   </component>
