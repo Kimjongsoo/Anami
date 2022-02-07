@@ -12,17 +12,21 @@
         <activity
             android:name=".NoticeActivity"
             android:exported="false" />
-        <activity android:name=".ChangeProfileActivity" />
-        <activity android:name=".ManageNoteActivity" />
-        <activity android:name=".ProfileActivity" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".ChangeProfileActivity"
+            android:exported="false"/>
+        <activity android:name=".ManageNoteActivity"
+            android:exported="false"/>
+        <activity android:name=".ProfileActivity"
+            android:exported="false"/>
+        <activity android:name=".LoginActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"
+            android:exported="false"/>
     </application>
 
 </manifest>
