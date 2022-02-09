@@ -5,10 +5,80 @@
     android:layout_height="match_parent"
     tools:context=".ManageTwoFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mg2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2월 첫째 주"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mg2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="85점"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/mg2_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Homework Y"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mg2_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2월 둘째 주"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mg2_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="60점"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/mg2_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Homework N"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 
 </FrameLayout>
