@@ -31,18 +31,23 @@ class LoginActivity : AppCompatActivity() {
         
         //로그인 버튼 작동
         binding.btnLogin.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java)
-
-            if(binding.cbAutoLogin.isChecked){
-                editor.putBoolean("isLogin", true)
-                editor.apply()
+            if(binding.etAccount.text.toString() == "" || binding.etPassword.text.toString() == "") {
+                Toast.makeText(this,"아이디와 비밀번호를 모두 입력해주세요", Toast.LENGTH_SHORT).show()
             }
+            else {
+                val intent = Intent(this, MainActivity::class.java)
 
-            var account:String = binding.etAccount.text.toString()
-            if(account == "") account = "default"
-            Toast.makeText(this, account + "님 환영합니다", Toast.LENGTH_SHORT).show()
-            startActivity(intent)
-            finish()
+                if (binding.cbAutoLogin.isChecked) {
+                    editor.putBoolean("isLogin", true)
+                    editor.apply()
+                }
+
+                var account: String = binding.etAccount.text.toString()
+                if (account == "") account = "default"
+                Toast.makeText(this, account + "님 환영합니다", Toast.LENGTH_SHORT).show()
+                startActivity(intent)
+                finish()
+            }
         }
     }
 }
