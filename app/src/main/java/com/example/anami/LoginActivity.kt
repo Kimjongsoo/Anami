@@ -42,6 +42,7 @@ class LoginActivity : AppCompatActivity() {
             if(account == "") account = "default"
             Toast.makeText(this, account + "님 환영합니다", Toast.LENGTH_SHORT).show()
             startActivity(intent)
+            finish()
         }
     }
 }

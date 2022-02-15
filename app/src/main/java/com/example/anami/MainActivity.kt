@@ -3,9 +3,13 @@ package com.example.anami
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.anami.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    //time
+    var bpTime:Long = 0
+
     lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,7 +33,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        super.onBackPressed()
-        finishAffinity()
+        val curTime:Long = System.currentTimeMillis()
+        val tg:Long = curTime - bpTime
+
+        if(tg in 0..2000)
+            finish()
+        else{
+            bpTime = curTime
+            Toast.makeText(this, "'뒤로'버튼을 한 번 더 누르시면 종료됩니다.",Toast.LENGTH_SHORT).show()
+        }
     }
 }
