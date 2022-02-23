@@ -21,7 +21,14 @@
 
 [WBS]
 
+![image](https://user-images.githubusercontent.com/31787166/155333486-50451f23-9557-4127-a26f-84e37cfb0fdf.png)
 
 
 
 [앱 화면]
+
+![image](https://user-images.githubusercontent.com/31787166/155333391-fe0d6b38-fcd4-444b-a562-e3ff13d46c30.png)
+
+
+
+
